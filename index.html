@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery文字3D翻转特效 - 97站长网 - www.97zzw.com</title>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.quickflip.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/hover-quickflips.css" />
+<script type="text/javascript">
+$(function() {
+    
+    // for performance first init the quickFlip
+    $('.quickFlip').quickFlip();
+    
+    // set up a hover effect for each of the quickflip wrappers
+    for ( var i = 0; i < $.quickFlip.wrappers.length; i++ ) {
+        var thisOne = $.quickFlip.wrappers[i];
+
+        $( thisOne.wrapper ).click( function(ev) {
+            var $target = $(ev.target);
+            if($target.get(0).nodeName=='IMG')
+              $target = $target.parent();
+            // make sure it isn't a child node
+            if ( !$target.hasClass('quickFlip') ) $target = $target.parent();
+            
+            $target.quickFlipper();
+              
+        });
+    }
+   
+});
+</script>
+</head>
+
+<body>
+<p style="text-align:center;">
+<a href="index.html">案例一</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index2.html">案例二</a>
+</p>
+<div id="content">
+  <div class="quickFlip">
+    <div class="panel1"><img src="images/1.jpg" alt="" /></div>
+    <div class="panel2"><img src="images/2.jpg" alt="" /></div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">11</div>
+    <div class="panel2">22</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">QUICK</div>
+    <div class="panel2">FLIP</div>
+  </div>
+  <div class="quickFlip">
+    <div class="panel1">FLIP</div>
+    <div class="panel2">QUICK</div>
+  </div>
+</div>
+<br class="clear" />
+</body>
+</html>
